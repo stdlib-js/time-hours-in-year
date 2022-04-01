@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/time-hours-in-year",
+  "version": "0.0.0",
+  "description": "Determine the number of hours in a year according to the Gregorian calendar.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/time-hours-in-year.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtime",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "date",
+    "year",
+    "yr",
+    "hours",
+    "hrs",
+    "hr",
+    "gregorian",
+    "calendar",
+    "time"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
