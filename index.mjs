@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object@esm/index.mjs";import{isPrimitive as t}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-integer@esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-leap-year@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@esm/index.mjs";function i(i){var n;if(arguments.length)if(e(i))n=i.getFullYear();else{if(!t(i))throw new TypeError(r("invalid argument. Must provide either an integer or a Date object. Value: `%s`.",i));n=i}else n=(new Date).getFullYear();return s(n)?8784:8760}export{i as default};
-//# sourceMappingURL=index.mjs.map
