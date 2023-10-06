@@ -35,31 +35,38 @@ limitations under the License.
 
 > Determine the number of hours in a year according to the [Gregorian calendar][gregorian-calendar].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/time-hours-in-year
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var hoursInYear = require( '@stdlib/time-hours-in-year' );
+hoursInYear = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var hoursInYear = require( 'path/to/vendor/umd/time-hours-in-year/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.hoursInYear;
+})();
+</script>
 ```
 
 #### hoursInYear( \[value] )
@@ -104,8 +111,13 @@ num = hoursInYear( 2017 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var hoursInYear = require( '@stdlib/time-hours-in-year' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var v;
 var i;
@@ -114,72 +126,18 @@ for ( i = 0; i < 2021; i++ ) {
     v = hoursInYear( i );
     console.log( 'The year %d has %d hours.', i, v );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/time-hours-in-year-cli
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: hours-in-year [options] [year]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ hours-in-year
-<number>
-```
-
-For a specific year,
-
-```bash
-$ hours-in-year 2016
-8784
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -274,7 +232,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/time/hours-in-month]: https://github.com/stdlib-js/time-hours-in-month
+[@stdlib/time/hours-in-month]: https://github.com/stdlib-js/time-hours-in-month/tree/umd
 
 <!-- </related-links> -->
 
