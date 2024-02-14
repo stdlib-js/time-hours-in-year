@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import hoursInYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-hours-in-year/tags). For example,
+
+```javascript
 import hoursInYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@v0.2.0-deno/mod.js';
 ```
 
@@ -88,7 +93,7 @@ num = hoursInYear( 2017 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hoursInYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@v0.2.0-deno/mod.js';
+import hoursInYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-hours-in-year@deno/mod.js';
 
 var v;
 var i;
